@@ -34,7 +34,7 @@ async def executeWebhook(username, image_link, id):
     embed.add_field(name="URLs", value=f'[Post](https://vsco.co/{username}/media/{id})\n[Profile](https://vsco.co/{username}/gallery)', inline=False)
     embed.set_image(url=image_link)
     embed.set_footer(text=f"{datetime.datetime.now()}")
-    channel = bot.get_channel(1002120090390634597)
+    channel = bot.get_channel(int(settings["monitor_channel"]))
 
     await channel.send(embed=embed)
 
