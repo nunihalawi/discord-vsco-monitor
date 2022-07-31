@@ -1,5 +1,8 @@
 # discord-vsco-monitor
 
+automatically monitor and notify to discord channel/webhook whenever an added user (in users.json) posts on vsco
+
+
 input discord bot token and the channel id that you want it to send to (make sure the bot has access to the channel and has send message access)
 
 don't touch users.json
